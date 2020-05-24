@@ -7,7 +7,7 @@
       <div class="panel-body">
         <div class="form-group">
           <div class="checkbox-header">
-            <label for="checkbox">Please check this before loading if your CSV has headers</label>
+            <label for="checkbox">Please check this before import if your CSV has headers</label>
             <input type="checkbox" id="checkbox" v-model="hasHeader" />
           </div>
           <div class="file_input">
