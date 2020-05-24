@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+body {
+    margin: 32px 20px;
+}
+#app {
+    font-family: sans-serif;
+    text-align: center;
+    color: #2c3e50;
+}
+.panel {
+    border: 2px solid #8D6C9F;
+    border-radius: 5px;
+    background-color: #FFF7F0;
+    box-shadow: rgba(201, 167, 211, 0.15) 0 1px 0 0;
+    max-width: 100%;
+    margin: 10px auto;
+}
+.panel-heading {
+    border-bottom: 2px solid #8D6C9F;
+}
+.panel-heading h1, .panel-heading h2, .panel-heading h3, .panel-heading h4, .panel-heading h5, .panel-heading h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.panel-body {
+    padding: 15px 20px;
+    margin: 5px auto;
+}
+.form-control{
+    margin-top: 10px;
+    border: solid 2px #8D6C9F;
+    border-radius: 4px;
+}
+.csv-table{
+    display: table;
+    margin: 15px auto;
+}
+table {
+    border: 2px solid #8D6C9F;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width:100%;
+    word-break: break-word;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+}
+
+.cell-input {
+    width: 100%;
+    padding: 1px;
+    border: none;
+}
+
+.export-json{
+    margin-top: 15px;
+}
+
+button {
+    background-color: #85CBF8;
+    border: 2px solid #8D6C9F;
+    border-radius: 5px;
+}
+
+.no-data-error {
+    display: block;
+    margin-top: 5px;
+    color: red;
+}
+
+.control-label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#checkbox {
+    height: 15px;
+    width: 15px;
+}
+
+
