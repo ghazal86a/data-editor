@@ -1,7 +1,7 @@
 <template>
   <div class="export-json">
-    <button @click="exportToJson()">Export to Json</button>
-    <span class="no-data-error" v-show="rows.length === 0 && showError">No data to export!</span>
+    <button @click="exportToJson(rows)">Export to Json</button>
+    <span class="no-data-error" v-if="rows.length === 0 && showError">No data to export!</span>
   </div>
 </template>
 
@@ -19,10 +19,9 @@ export default {
     ...mapState(['rows'])
   },
   methods: {
-    exportToJson () {
-      if (this.rows.length > 0) {
-        console.log(JSON.stringify(this.rows))
-        const data = JSON.stringify(this.rows)
+    exportToJson (rows) {
+      if (rows.length > 0) {
+        const data = JSON.stringify(rows)
         var fileURL = window.URL.createObjectURL(new Blob([data]))
         var fileLink = document.createElement('a')
 

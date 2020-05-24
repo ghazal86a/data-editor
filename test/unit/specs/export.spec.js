@@ -12,8 +12,7 @@ describe('ExportJson Component', () => {
 
   beforeEach(() => {
     state = {
-      header: ['header1', 'header2'],
-      rows: [{'header1': 'value1'}, {'header2': 'value2'}]
+      rows: []
     }
     store = new Vuex.Store({
       state

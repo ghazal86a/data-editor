@@ -33,8 +33,4 @@ context('Window', () => {
     cy.get('.export-json button').click()
     cy.get('.no-data-error').should('be.visible')
   })
-
-  it('', () => {
-
-  })
 })
