@@ -32,7 +32,7 @@ const store = new Vuex.Store({
         }
         reader.onerror = evt => {
           if (evt.target.error.name === 'NotReadableError') {
-            alert("Cannot read file !")
+            alert('Cannot read file !')
           }
         }
       } else {
